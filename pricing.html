@@ -10,8 +10,7 @@
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-              <img class="bi me-2" width="40" height="32" style="margin: 0 0.5rem 0 0;" src="https://www.woodlandsmarket.com/petshop/wp-content/uploads/Pet-Shop-Web.png" alt=""></img>
-              <!-- <svg class="bi me-2" width="40" height="32"></svg> -->
+                <img class="bi me-2"  height="40" style="margin: 0 0.5rem 0 0;" src="assets/logo-crop.png" alt=""></img>
               <span class="fs-4">Peek-A-Bow The Pet Club</span>
             </a>
     
@@ -26,27 +25,26 @@
         <!-- Body Content -->
         <div id="content">
             <div id="pricing" class="text-center">
-                <h2>Pricing</h2>
-                <p>Our pricing plans cater to every pet owner's needs:</p>
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Basic Grooming Package</h5>
-                                <p class="card-text">Includes bath, brush, and nail trimming.</p>
-                                <p class="card-text">Price: $30</p>
-                            </div>
-                        </div>
+                
+                <div class="container px-4 py-5" id="icon-grid">
+                    <h1>Pricing</h1>
+                    <p>Our pricing plans cater to every pet owner's needs:</p>
+
+
+                    <div class="breed-selection btn-group" role="group" aria-label="Breed Selection">
+                        <input type="radio" class="btn-check" id="large" autocomplete="off" name="breed" value="large">
+                        <label class="btn btn-primary" for="large">Large Breed</label>
+                    
+                        <input type="radio" class="btn-check" id="medium" autocomplete="off" name="breed" value="medium">
+                        <label class="btn btn-primary" for="medium">Medium Breed</label>
+                    
+                        <input type="radio" class="btn-check" id="small" autocomplete="off" name="breed" value="small">
+                        <label class="btn btn-primary" for="small">Small Breed</label>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Deluxe Grooming Package</h5>
-                                <p class="card-text">Includes bath, brush, nail trimming, and haircut.</p>
-                                <p class="card-text">Price: $50</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="pricing-details" class="justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5 align-items-center">
+                        <!-- Pricing details will be populated here -->
+                        <h6>Select your breed type for pricing</h6>
+                    
                 </div>
             </div>
         </div>

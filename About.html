@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peek-A-Bow</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Custom CSS for Footer */
+        .footer-widgets-wrap {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-widgets-wrap .widget {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-widgets-wrap {
+                flex-direction: column;
+            }
+        }
+
+        .business-hours {
+            background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value (fourth parameter) for transparency */
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
 </head>
+
 <body style="background-color: #f6f3fc; background-image: url(assets/skulls.png)">
     <div class="container">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <img class="bi me-2" width="40" height="32" style="margin: 0 0.5rem 0 0;" src="https://www.woodlandsmarket.com/petshop/wp-content/uploads/Pet-Shop-Web.png" alt=""></img>
-          <!-- <svg class="bi me-2" width="40" height="32"></svg> -->
-          <span class="fs-4">Peek-A-Bow The Pet Club</span>
-        </a>
-    
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="./services.html" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="./pricing.html" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="./About.html" class="nav-link active">About</a></li>
-          </ul>
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img class="bi me-2" height="40" style="margin: 0 0.5rem 0 0;" src="assets/logo-crop.png" alt=""></img>
+                <!-- <svg class="bi me-2" width="40" height="32"></svg> -->
+                <span class="fs-4">Peek-A-Bow The Pet Club</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="./pricing.html" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="./About.html" class="nav-link active">About</a></li>
+            </ul>
         </header>
-        
+
         <!-- Body Content -->
         <div id="content">
             <div id="about" class="text-center">
@@ -32,10 +59,76 @@
                 <p>At Peek-A-Bow, we believe in fostering a community of pet lovers and providing a welcoming environment for both pets and their owners.</p>
             </div>
         </div>
+
+        <footer id="footer" class="dark" style="margin-top: 5rem;">
+            <div class="container">
+                <div class="footer-widgets-wrap clearfix">
+                    <!-- Contact Details Widget -->
+                    <div class="col-md-4">
+                        <div class="widget clearfix">
+                            <address class="nobottommargin">
+                                <h4>Peek-A-Bow The Pet Club</h4>
+                                <p>Door No. 22, 84, BHEL Cross Road, Gouthami Nagar Colony, Jawahar Colony, Chanda Nagar, Hyderabad, Telangana 500032, India</p>
+                                <p><strong>Phone: </strong><a href="tel:+919966622513"> +91 9966622513</a>
+                                </p>
+                                <p><strong>Email:</strong> <a href="mailto:peekabow@peekabow.com">peekabow@peekabow.com</a>
+                                </p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15221.034337889843!2d78.29965683955079!3d17.4951654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d9af5ed3c7%3A0x89d50e735f4277d3!2sPEEK-A-BOW%20THE%20PET%20CLUB!5e0!3m2!1sen!2sus!4v1713373012135!5m2!1sen!2sus" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            </address>
+                        </div>
+                    </div>
+                    <!-- Business Hours Widget -->
+                    <div class="col-md-4 ">
+                        <div class="widget clearfix business-hours">
+                            <h4>Business Hours</h4>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Mon</td>
+                                        <td>7:00 am - 6:00 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tue</td>
+                                        <td>7:00 am - 6:00 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wed</td>
+                                        <td>7:00 am - 6:00 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thu</td>
+                                        <td>7:00 am - 6:00 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fri</td>
+                                        <td>7:00 am - 6:00 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sat</td>
+                                        <td>8:00 am - 6:00 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sun</td>
+                                        <td>9:00 am - 5:00 pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            </div>
+        </footer>
     </div>
 
     <script src="logic.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
